@@ -8,9 +8,9 @@
     "sqlite3": "^5.0.0"
   },
   "scripts": {
-    "start": "node .",
-    "test": "nodemon .",
-    "cloc": "cloc . --exclude-dir=node_modules,package-lock.json,package.json --by-percent c"
+    "start": "node src",
+    "test": "nodemon src",
+    "cloc": "cloc src --exclude-dir=node_modules,package-lock.json,package.json --by-percent c"
   },
   "devDependencies": {
     "cloc": "^2.7.0",
