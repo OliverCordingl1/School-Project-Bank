@@ -9,13 +9,14 @@ const { PORT = 3000 } = process.env;
 
 const app = express();
 
-console.log('Starting database');
 const sequelize = new Sequelize({
 	dialect: 'sqlite',
 	storage: path.join(__dirname, 'storage.db'),
 });
 
 class User extends Model {}
+class Transaction extends Model {}
+
 User.init({
 	firstName: DataTypes.STRING,
 	lastName: DataTypes.STRING,
@@ -24,7 +25,6 @@ User.init({
 	modelName: 'user',
 });
 
-class Transaction extends Model {}
 Transaction.init({
 	from: DataTypes.INTEGER,
 	to: DataTypes.INTEGER,
@@ -38,6 +38,7 @@ User.sync();
 Transaction.sync();
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
