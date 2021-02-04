@@ -1,0 +1,22 @@
+/*
+	Obviously CSS is not very CS-sy but I thought I might as well add it so it isn't that bad to test.
+	It is still commented if you want to look through it but there is nothing at all special about it.
+*/
+
+/*
+	The following CSS resets some of the browser defaults, like margins, font sizes
+	and font weights to make it easier to work with.
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	font-size: 12pt;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
