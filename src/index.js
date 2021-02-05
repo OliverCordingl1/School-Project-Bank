@@ -63,7 +63,7 @@ app.set('views', path.join(__dirname, 'views'));
 // and they follow a set format to allow the webserver to be made well without
 // having to repeat a lot of code.
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Express routers are a type of middleware that make keeping files smaller and nicer
 // to maintain easier. It prepends every endpoint inside the middleware with the url provided
