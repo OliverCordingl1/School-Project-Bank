@@ -4,21 +4,34 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>NUAST Bank</title>
+	<title>The Bank</title>
 
+	<link rel="preconnect" href="https://fonts.gstatic.com" /> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
-	<h1>Welcome to NUAST bank!</h1>
-	<h4>Minimalistic by design</h4>
+	<h1>Welcome to The Bank!</h1>
+	<h2>Minimalistic by design</h2>
 
-	<div class="form-box">
-		<form id="create-user">
-			<input type="text" placeholder="First Name" name="first_name" />
-			<input type="text" placeholder="Last Name" name="last_name" />
-			<button type="submit" >Create user!</button>
-		</form>
-	</div>
+	<section class="form-box-wrapper">
+		<div class="form-box">
+			<form id="create-user">
+				<input type="text" placeholder="First Name" name="first_name" /><br>
+				<input type="text" placeholder="Last Name" name="last_name" /><br>
+				<button type="submit" >Create user</button>
+			</form>
+		</div>
+
+		<div class="form-box">
+			<form id="create-transaction">
+				<input type="number" placeholder="ID FROM" name="from" /><br>
+				<input type="number" placeholder="ID TO" name="to" /><br>
+				<input type="number" placeholder="AMOUNT" name="amount" /><br>
+				<button type="submit" >Start transaction</button>
+			</form>
+		</div>
+	</section>
 
 	<script src="/js/main.js"></script>
 </body>

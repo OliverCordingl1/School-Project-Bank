@@ -19,4 +19,38 @@ h1, h2, h3, h4, h5, h6, p, a {
 	font-weight: normal;
 	text-decoration: none;
 	color: #000000;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+/*
+	Actual styling from here on
+*/
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+section.form-box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 100px;
+}
+
+div.form-box {
+	flex-grow: 4;
+
+	background-color: darkslategray;
+
+	margin: 5%;
+	padding: 40px;
+	border-radius: 50px;
+
+	box-shadow: 5px 5px 15px -5px #000000;
 }
